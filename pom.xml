@@ -6,9 +6,9 @@
 
     <description>Brand new Minecraft: Bedrock Edition proxy created by authors of well-known Waterdog proxy
     </description>
-    <groupId>dev.waterdog.waterdogpe</groupId>
-    <artifactId>waterdog</artifactId>
-    <version>2.0.3-SNAPSHOT</version>
+    <groupId>xyz.syodo.software</groupId>
+    <artifactId>syodogpe</artifactId>
+    <version>2.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -136,6 +136,12 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>33.1.0-jre</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>net.minecrell</groupId>
             <artifactId>terminalconsoleappender</artifactId>
             <version>1.3.0</version>
@@ -214,7 +220,7 @@
                             <Main-Class>dev.waterdog.waterdogpe.WaterdogPE</Main-Class>
                         </manifestEntries>
                     </archive>
-                    <finalName>Waterdog</finalName>
+                    <finalName>waterdogpe</finalName>
                 </configuration>
             </plugin>
             <plugin>
