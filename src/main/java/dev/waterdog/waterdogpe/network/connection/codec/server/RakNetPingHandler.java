@@ -40,12 +40,12 @@ public class RakNetPingHandler extends SimpleChannelInboundHandler<RakPing> {
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, RakPing rakPing) {
+    protected void channelRead0(ChannelHandlerContext ctx, RakPing rakPing) throws Exception {
         ProxyConfig config = this.proxy.getConfiguration();
 
         ProxyPingEvent event = new ProxyPingEvent(
                 config.getMotd(),
-                "§9discord.syodo.xyz",
+                config.getSubMotd(),
                 "Survival",
                 "MCPE",
                 ProtocolVersion.latest().getMinecraftVersion(),
